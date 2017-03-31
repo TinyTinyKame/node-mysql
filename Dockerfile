@@ -19,3 +19,4 @@ RUN apt-get install -y build-essential autoconf
 RUN apt-get install -y wget curl openssl socat mysql-client ssh git
 RUN curl -sL https://deb.nodesource.com/setup_6.x | bash -
 RUN apt-get install -y nodejs
+RUN echo "127.0.0.1	vm011.tic-clo5.etna.local" >> /etc/hosts
