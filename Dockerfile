@@ -23,3 +23,6 @@ RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources
 RUN apt-get update
 RUN apt-get install -y nodejs
 RUN apt-get install -y yarn
+RUN apt-get install rabbitmq-server -y
+RUN service rabbitmq-server start
+RUN rabbitmq-plugins enable rabbitmq_management
