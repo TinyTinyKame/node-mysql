@@ -25,3 +25,4 @@ RUN apt-get install -y nodejs
 RUN apt-get install -y yarn
 RUN apt-get install rabbitmq-server -y
 RUN service rabbitmq-server start
+RUN -d --hostname gitlab-ci --name gitlab-ci rabbitmq:3
