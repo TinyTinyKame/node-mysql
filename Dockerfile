@@ -26,3 +26,4 @@ RUN apt-get install -y yarn
 RUN apt-get install rabbitmq-server -y
 RUN service rabbitmq-server start
 RUN rabbitmq-plugins enable rabbitmq_management
+RUN rabbitmqctl status
